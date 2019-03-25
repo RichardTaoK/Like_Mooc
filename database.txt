@@ -1,0 +1,10 @@
+1. field    大分类 例如：前端 后台
+2. category 小分类 例如：javascript
+3. type     课程类型 例如：基础 案例
+4. degree   难度   例如：初级高级
+
+5. course   课程表
+6. course_category 课程和小分类的对应表
+
+7. chapters 章
+8. sections 节

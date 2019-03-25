@@ -1,0 +1,141 @@
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><!doctype html>
+<html lang="en">
+<head>
+    <title>慕课网</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="慕课网">
+    <meta name="keywords" content="慕课网">
+    <meta name="author" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-transform "/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <script type="text/javascript" src="/statics/js/flexible.js"></script>
+    <script type="text/javascript">
+        var userInfo = "";
+    </script>
+    <link rel="stylesheet" href="/statics/css/common_e75f96d.css"/>
+    <link rel="stylesheet" href="/statics/css/main_5f4f57a.css"/>
+</head>
+<body>
+<header>
+    <div class="header clearfix">
+        <a class="imwap-arrow_l goback l" href="javascript:history.go(-1)"></a>
+        <span class='js-header-name header-name header-tit l'>
+				注册登录
+		</span>
+    </div>
+</header>
+<div id="wrapper">
+    <div id="middle" class="container">
+        <ul class="account-tab">
+            <li class="active">登录</li>
+            <li><a href="index.php?m=member&c=index&a=register">注册</a></li>
+        </ul>
+        <div class="account-form">
+            <form method="post" action="index.php?m=member&c=index&a=login" id="myform">
+            <div class="account-form-group">
+                <input type="text" id="username" name="username" size="36"
+                       class="account-form-control js-input-name input-text" placeholder="手机号或邮箱"
+                       data-validate="require-mobile-phone">
+                <div class="account-form-tip errorHint" data-error-hint="请输入正确的邮箱或手机号"></div>
+            </div>
+            <div class="account-form-group">
+                <!--<input type="password" class="account-form-control js-input-password" data-validate="require-password"-->
+                <!--placeholder="请输入密码">-->
+                <input type="password" id="password" name="password" size="36"
+                       class="input-text account-form-control js-input-password" data-validate="require-password"
+                       placeholder="请输入密码">
+                <i class="imwap-visibility js-showpw"></i>
+                <div class="account-form-tip errorHint"></div>
+            </div>
+            <div class="account-form-group">
+                <!--<input type="password" class="account-form-control js-input-password" data-validate="require-password"-->
+                <!--placeholder="请输入密码">-->
+                <input type="password" name="pwdconfirm" id="pwdconfirm" size="36" class="input-text account-form-control js-input-password" data-validate="require-password"
+                       placeholder="请重新输入密码">
+                <i class="imwap-visibility js-showpw"></i>
+                <div class="account-form-tip errorHint"></div>
+            </div>
+            <div class="account-form-group button-row">
+                <div class="account-form-tip js-error"></div>
+                <input style="width: 100%;" type="submit" name="dosubmit" hidefocus="true" value="登录" class="account-form-btn js-btn-login">
+            </div>
+            <a href="forgot">忘记密码</a>
+            </form>
+        </div>
+
+        <div class="account-sns-login">
+            <dl>
+                <dt>其他方式登录</dt>
+                <dd>
+                    <a href="javascript:void(0)" data-login-sns="//m.imooc.com/passport/user/tplogin?tp=qq"><i
+                            class="imwap-qq"></i></a>
+                </dd>
+                <dd class="login-wx js-login-wx">
+                    <a href="javascript:void(0)" data-login-sns="//m.imooc.com/passport/user/tplogin?tp=weixinapp"><i
+                            class="imwap-wechat"></i></a>
+                </dd>
+                <dd>
+                    <a href="javascript:void(0)" data-login-sns="//m.imooc.com/passport/user/tplogin?tp=weibo"><i
+                            class="imwap-weibo"></i></a>
+                </dd>
+            </dl>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="https://www.imooc.com/passport/static/scripts/ssologin.js?v=2.0"></script>
+
+
+<script type="text/javascript">
+    var shareData = {
+        title: "慕课网",
+        desc: "慕课网",
+        imgUrl: 'https://moco.imooc.com/static/base/images/logo-share.png',
+        otherImgUrl: '',
+        text: '我正在参加@慕课网的课程，很不错哦！快来一起学习吧！',
+        // url: 'https://www.imooc.com' + window.location.pathname + window.location.search
+        url: window.location.href,
+        link: window.location.href
+    }
+</script>
+
+
+<div style="display:none;">
+    <!-- 百度统计 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?c92536284537e1806a07ef3e6873f2b3";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    <!-- 友盟统计 -->
+    <!-- <script src="https://s95.cnzz.com/z_stat.php?id=1261728817&web_id=1261728817" language="JavaScript"></script>
+</div>
+<script type="text/javascript" src="/statics/js/jquery-2.1.0.min_ac9f840.js"></script>
+<script type="text/javascript" src="/statics/js/common_03ec857.js"></script>
+<script type="text/javascript" src="/statics/js/moco.min_281f9ec.js"></script>
+<script type="text/javascript" src="/statics/js/login_ae348ad.js"></script> -->
+</body>
+</html>
